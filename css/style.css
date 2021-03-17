@@ -119,6 +119,58 @@
     transition: all 0.3s ease;
 }
 
+.text-container {
+    display: flex;
+    align-items: center;
+}
+
+.text-container h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.text-container p {
+    margin-top: 5px;
+    color: var(--p-color);
+}
+
+.text-container .group {
+    margin-right: 40px;
+}
+
+.text-container .bars {
+    width: 1px;
+    height: 60px;
+    /* background: var(--p-color); */
+    background: gray;
+    margin-right: 40px;
+
+}
+
+.text-container .bars2 {
+    margin-left: 40px;
+}
+
+.line-bars {
+    margin-top: 50px;
+    width: 100%;
+    height: 10px;
+    background: lightgray;
+    border-radius: 10px;
+    position: relative;
+}
+
+.line-bars:before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 75%;
+    background: var(--light-cyane);
+    position: absolute;
+    border-radius: 10px;
+}
+
 
 
 

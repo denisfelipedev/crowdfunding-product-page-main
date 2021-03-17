@@ -20,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
 .main-container {
@@ -45,6 +44,14 @@
     background: #fff;
     border-radius: 10px;
     padding: 50px;
+}
+
+.inside-card {
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px 30px;
+    border: 1px solid lightgray
 }
 
 .main-btn {
