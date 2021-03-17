@@ -24,8 +24,7 @@
 
 .main-container {
     max-width: 1440px;
-    margin: auto;
-    padding: 0 350px 100px;
+    margin: 0 auto;
     height: 100%;
     background: #f1f1f1;   
 }
@@ -35,19 +34,22 @@
     width: 100%;
     height: 100%;
     background: none;
-    z-index: ;
     margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {
-    margin: 30px 0;
+    margin-top: 30px;
     background: #fff;
     border-radius: 10px;
     padding: 50px;
+    width: 740px;
 }
 
 .inside-card {
-    margin: 30px 0;
+    margin-top: 30px;
     background: #fff;
     border-radius: 10px;
     padding: 50px 30px;
@@ -58,7 +60,7 @@
     text-decoration: none;
     color: var(--text-button-color);
     background: var(--light-cyane);
-    padding: 18px 40px;
+    padding: 18px 35px;
     font-weight: 500;
     border-radius: 30px;
     transition: all .3s ease;

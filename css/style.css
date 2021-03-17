@@ -58,12 +58,13 @@
 
 /* Styling Main Container Starts here*/
 
-.card1 {
+/* Card 3 styling here */
 
+.card1 {
     background: #fff;
     border-radius: 10px;
-    /* padding: 0 50px 50px; */
     padding: 50px;
+    width: 740px;
 }
 
 .text-area {
@@ -119,6 +120,8 @@
     transition: all 0.3s ease;
 }
 
+/* Card 2 styling here */
+
 .text-container {
     display: flex;
     align-items: center;
@@ -171,6 +174,47 @@
     border-radius: 10px;
 }
 
+/* Card 3 styling here */
+
+
+.inside-card .title .p-title {
+    color: var(--light-cyane);
+    font-weight: 700;
+}
+
+.inside-card .title .p-title-special {
+    color: var(--light-cyane);
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.card .p-card ,
+.inside-card .p-card {
+    margin: 50px 0;
+    color: var(--p-color);
+    line-height: 2;
+}
+
+.inside-card .bottom .left .p-card-left {
+    color: var(--p-color);
+    margin-left: 10px;
+}
+
+.out-of-stock-btn {
+    text-decoration: none;
+    color: var(--text-button-color);
+    background: #cbcbcb;
+    padding: 18px 35px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
+.inside-card .title .card3-special,
+.inside-card .bottom .card3-special {
+    color: #828282;
+    font-weight: 700;
+}
 
 
 
