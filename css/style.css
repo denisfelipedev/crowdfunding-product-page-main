@@ -140,6 +140,7 @@
 
 .right-btn .bookmark {
     margin-right: 10px;
+    transition: all 0.3s ease-in;
 }
 
 .left-btn:hover {
@@ -155,13 +156,13 @@
 .btn-container a:hover, .btn-container a:hover .bookmark circle
 {
     fill: hsl(176, 72%, 28%);
-    transition: all .3s ease-in;
+    transition: all .3s ease-in-out;
 }
 
 .btn-container a:hover, .btn-container a:hover .bookmark path
 {
     fill: #f1f1f1;
-    transition: all .3s ease-in;
+    transition: all .3s ease-in-out;
 }
 
 .mastercraft-card2 {
@@ -196,6 +197,7 @@
 .text-3 h1,
 .text-2 h1 {
     font-weight: bold;
+    margin-bottom: 16px;
 }
 
 .text-1 p,
@@ -205,11 +207,27 @@
     font-weight: 500;
 }
 
-.card-line {
+.card-content .card-line {
     height: 10px;
     width: 100%;
     background: #cdcdcd;
     margin-top: 40px;
     border-radius: 5px;
+    position: relative;
+}
+
+.card-content .card-line::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background:hsl(176, 72%, 28%);
+}
+
+.card-content .line::before {
+    width: 80%;
 }
 
