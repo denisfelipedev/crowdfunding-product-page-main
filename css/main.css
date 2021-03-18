@@ -16,7 +16,8 @@
     --text-button-color: #fdfdfd;
 }
 
-.flex {
+.flex,
+.flex-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;

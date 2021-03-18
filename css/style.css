@@ -207,6 +207,12 @@
     line-height: 2;
 }
 
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .inside-card .bottom .left .p-card-left {
     color: var(--p-color);
     margin-left: 10px;
@@ -237,14 +243,11 @@
     }
 
     .navbar .navbar-content {
-        position: relative;
+        border: 1px solid red;
     }
 
     .navbar .navbar-menu {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 10%;
+        display: none;
     }
 
     .navbar .navbar-menu .nav-links {
@@ -294,11 +297,6 @@
 }
 
 @media (max-width: 540px) {
-
-    .flex {
-        display: block;
-    }
-
     .navbar {
         height: 300px;
     }
@@ -306,13 +304,19 @@
     .navbar::before {
         height: 300px;
     }
-    
-    .card-container {
-        margin-top: -50px;
+
+    .main-container .card-container .card1 {
+        padding: 30px;
     }
 
-    .card1 {
-        padding: 30px;
+    .main-container .card-container .card1 .text-area p {
+        font-size: 14.5px;
+        line-height: 1.8;
+        margin-top: 10px;
+    }
+
+    .main-container .card-container .card1 .text-area h1 {
+        margin-top: 20px;
     }
 
     .main-container .card-container .card {
@@ -320,11 +324,15 @@
     }
 
     .main-container .card-container {
-        margin-top: -50px;
+        margin-top: -55px;
     }
 
     .logo-mastercraft {
         margin-top: -60px;
+    }
+
+    .main-container .card-container .card .inside-card {
+        padding: 30px;
     }
 
     .main-container .card-container .card .inside-card .title {
@@ -337,20 +345,28 @@
         font-size: 16px;
     }
 
-    .card .p-card ,
-    .inside-card .p-card {
-    margin: 50px 0;
-    color: var(--p-color);
-    line-height: 1.5;
-    font-size: 15px;
+    .main-container .card-container .card .p-card ,
+    .main-container .card-container .card .inside-card .p-card {
+        font-size: 15px;
+        margin: 20px 0;
     }
 
-    .main-container .card-container .card .inside-card .bottom {
-        border: 1px solid red;
+    .flex {
+        flex-direction: column;
+    }
+
+    .main-container .card-container .card1 .btn-area .main-btn {
+        font-size: 15px;
+        padding: 19px 40px;
     }
 
     .main-container .card-container .card .inside-card .bottom .left {
-        border: 1px solid red;
+        align-self: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .main-container .card-container .card .inside-card .bottom .main-btn {
+        align-self: flex-start;
     }
 
     .card1 .btn-area .btn-group {
