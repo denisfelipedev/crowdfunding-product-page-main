@@ -26,7 +26,10 @@
     max-width: 1440px;
     margin: 0 auto;
     height: 100%;
-    background: #f1f1f1;   
+    background: #f1f1f1;
+    padding: 0 30px 50px;
+    width: 100%;
+    min-width: 375px;
 }
 
 .card-container {
@@ -41,11 +44,12 @@
 }
 
 .card {
-    margin-top: 30px;
+    margin: 30px 0 0 0;
     background: #fff;
     border-radius: 10px;
     padding: 50px;
-    /* width: 740px; */
+    width: 100%;
+    max-width: 740px;
 }
 
 .inside-card {
@@ -54,6 +58,7 @@
     border-radius: 10px;
     padding: 50px 30px;
     border: 1px solid lightgray;
+    width: 100%;
 }
 
 .main-btn {

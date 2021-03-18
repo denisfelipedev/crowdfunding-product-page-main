@@ -12,6 +12,7 @@
     background: url("../images/image-hero-desktop.jpg") center no-repeat;
     margin: 0 auto;
     position: relative;
+    min-width: 375px;
 }
 
 .navbar::before {
@@ -70,7 +71,8 @@
     background: #fff;
     border-radius: 10px;
     padding: 50px;
-    width: 740px;
+    max-width: 740px;
+    width: 100%;
 }
 
 .text-area {
@@ -231,6 +233,7 @@
         background: url("../images/image-hero-mobile.jpg") center no-repeat;
         background-size: cover;
         position: relative;
+        width: 100%;
     }
 
     .navbar .navbar-content {
@@ -246,31 +249,16 @@
 
     .navbar .navbar-menu .nav-links {
         padding: 0;
-        width: 375px;
-    }
-
-    .navbar::before {
-        height: 400px;
+        width: 100%;
     }
 
     .navbar .navbar-content {
-        padding: 50px;
+        padding: 30px;
     }
 
     .navbar .navbar-content .toggle-menu {
         display: block;
         z-index: 999;
-    }
-
-    .card,
-    .card1 {
-        max-width: 500px;
-        border: 1px solid red;
-        padding: 30px;
-    }
-
-    .logo-mastercraft {
-        margin: -60px;
     }
 
     .text-area {
@@ -285,11 +273,9 @@
     .text-area h1 {
         font-weight: 700;
         font-size: 24px;
-        margin-top: 30px;
     }
 
     .text-container {
-        /* padding: 50px; */
         flex-direction: column;
     }
 
@@ -307,8 +293,66 @@
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
+
+    .flex {
+        display: block;
+    }
+
+    .navbar {
+        height: 300px;
+    }
+
+    .navbar::before {
+        height: 300px;
+    }
     
+    .card-container {
+        margin-top: -50px;
+    }
+
+    .card1 {
+        padding: 30px;
+    }
+
+    .main-container .card-container .card {
+        padding: 30px;
+    }
+
+    .main-container .card-container {
+        margin-top: -50px;
+    }
+
+    .logo-mastercraft {
+        margin-top: -60px;
+    }
+
+    .main-container .card-container .card .inside-card .title {
+        /* border: 1px solid red; */
+        display: block;
+    }
+
+    .main-container .card-container .card .inside-card .title h2 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .card .p-card ,
+    .inside-card .p-card {
+    margin: 50px 0;
+    color: var(--p-color);
+    line-height: 1.5;
+    font-size: 15px;
+    }
+
+    .main-container .card-container .card .inside-card .bottom {
+        border: 1px solid red;
+    }
+
+    .main-container .card-container .card .inside-card .bottom .left {
+        border: 1px solid red;
+    }
+
     .card1 .btn-area .btn-group {
         display: none;
     }
