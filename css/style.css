@@ -14,7 +14,7 @@
     position: relative;
 }
 
-.navbar::after {
+.navbar::before {
     content: '';
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@
 }
 
 #navbar-logo{
-    z-index: 1;
+    z-index: 100;
 }
 .navbar-content {
     display: flex;
@@ -38,7 +38,7 @@
 .navbar-menu {
     list-style: none;
     display: flex;
-    z-index: 1;
+    z-index: 1
 }
 
 .nav-links {
@@ -56,9 +56,15 @@
     transform: scale(1.2);
 }
 
+.navbar .navbar-content .toggle-menu {
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
 /* Styling Main Container Starts here*/
 
-/* Card 3 styling here */
+/* Card 1 styling here */
 
 .card1 {
     background: #fff;
@@ -118,6 +124,10 @@
 .btn-group:hover .bookmark path {
     fill: var(--main-background);
     transition: all 0.3s ease;
+}
+
+.card1 .btn-area .mobile-bookmark {
+    display: none;
 }
 
 /* Card 2 styling here */
@@ -216,7 +226,105 @@
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        background: url("../images/image-hero-mobile.jpg") center no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 
+    .navbar .navbar-content {
+        position: relative;
+    }
 
+    .navbar .navbar-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 10%;
+    }
 
+    .navbar .navbar-menu .nav-links {
+        padding: 0;
+        width: 375px;
+    }
 
+    .navbar::before {
+        height: 400px;
+    }
+
+    .navbar .navbar-content {
+        padding: 50px;
+    }
+
+    .navbar .navbar-content .toggle-menu {
+        display: block;
+        z-index: 999;
+    }
+
+    .card,
+    .card1 {
+        max-width: 500px;
+        border: 1px solid red;
+        padding: 30px;
+    }
+
+    .logo-mastercraft {
+        margin: -60px;
+    }
+
+    .text-area {
+        text-align: center;
+    }
+
+    .text-area p {
+        color: var(--p-color);
+        margin: 10px 0 30px;
+    }
+    
+    .text-area h1 {
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .text-container {
+        /* padding: 50px; */
+        flex-direction: column;
+    }
+
+    .text-container .group {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .text-container .bars {
+        height: 2px;
+        width: 80px;
+        margin: 30px 0;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    
+    .card1 .btn-area .btn-group {
+        display: none;
+    }
+
+    .card1 .btn-area .mobile-bookmark {
+        display: block;
+    }
+
+    .card1 .btn-area .mobile-bookmark:hover circle {
+        fill: var(--dark-cyane);
+        transition: all 0.3s ease;
+    }
+
+    .card1 .btn-area .mobile-bookmark:hover path {
+        fill: var(--main-background);
+        transition: all 0.3s ease;
+    }
+
+}

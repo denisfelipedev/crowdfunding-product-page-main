@@ -45,7 +45,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 50px;
-    width: 740px;
+    /* width: 740px; */
 }
 
 .inside-card {
@@ -53,7 +53,7 @@
     background: #fff;
     border-radius: 10px;
     padding: 50px 30px;
-    border: 1px solid lightgray
+    border: 1px solid lightgray;
 }
 
 .main-btn {
