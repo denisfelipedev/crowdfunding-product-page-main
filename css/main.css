@@ -6,6 +6,27 @@
     box-sizing: border-box;
 }
 
+/* .navbar {
+    width: 100%;
+    max-width: 1440px;
+    height: 400px;
+    background: url("../images/image-hero-desktop.jpg") center no-repeat;
+    margin: 0 auto;
+    position: relative;
+    min-width: 375px;
+} */
+
+/* .navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 400px;
+    width: 100%;
+    background: linear-gradient( rgba(0,0,0,.4),  transparent, rgba(0,0,0,.4));
+} */
+
 :root {
     --light-cyane: hsl(176, 50%, 47%);
     --dark-cyane: hsl(176, 72%, 28%);
@@ -15,6 +36,8 @@
     --p-color: #8e8e8e;
     --text-button-color: #fdfdfd;
 }
+
+
 
 .flex,
 .flex-mobile {
