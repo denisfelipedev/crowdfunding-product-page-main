@@ -15,6 +15,10 @@
     position: relative;
 }
 
+ /* header {
+     display: flex;
+ } */
+
 .hero:before {
     content: '';
     position: absolute;
@@ -283,14 +287,15 @@
     }
 
     .hero header .navbar .navbar-menu {
-        position: fixed;
+        position: absolute;
         left: 0;
+        right: 0;
         top: -500px;
-        width: 100%;
         border-radius: 10px;
         background: #f1f1f1;
         transition: all 0.5s ease;
         z-index: 999;
+        margin: 0 50px;;
     }
 
     .hero header .navbar .navbar-menu.show {
@@ -299,7 +304,7 @@
 
     .hero header .navbar .navbar-menu .navbar-items {
         display: block;
-        padding: 26px;
+        padding: 43px;
         border-bottom: 1px solid lightgrey;
     }
 
@@ -367,15 +372,19 @@
     }
 
     .hero header .navbar .navbar-menu .navbar-items {
-        padding: 12px;
+        padding: 26px;
+    }
+
+    .hero header .navbar .navbar-menu .navbar-items.link-mobo {
+        border: none;
+    }
+
+    .hero header .navbar .navbar-menu {
+        margin: 0 30px;
     }
 
     .main-container .card-container .card1 {
         padding: 30px;
-    }
-
-    .navbar .toggle-menu-links .dropdown-items {
-        padding: 25px;
     }
 
     .main-container .card-container .card1 .text-area p {
@@ -431,7 +440,8 @@
 
     .main-container .card-container .card1 .btn-area .main-btn {
         font-size: 15px;
-        padding: 19px 40px;
+        padding: 19px 35px;
+        margin-right: 10px;
     }
 
     .main-container .card-container .card .inside-card .bottom .left {

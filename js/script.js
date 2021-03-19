@@ -1,15 +1,3 @@
-// function onClickMenu() {
-//     document.getElementById("menu-mobile").classList.toggle("show")
-//     document.getElementById("menu-mobile-close").classList.toggle("show")
-// }
-
-// const openMenu = document.querySelector('menu-hamb');
-// const closeMenu = document.querySelector('menu-close');
-// const navbar = document.querySelector('.navbar-menu');
-
-// openMenu.addEventListener('click', show);
-// closeMenu.addEventListener('click', close);
-
 function openMenu(){
     const openMenu = document.querySelector('.menu-hamb');
     const closeMenu = document.querySelector('.menu-close');
@@ -18,6 +6,7 @@ function openMenu(){
     const masterLogo = document.querySelector('.logo-mastercraft');
     const paddingChanges = document.querySelector('.card1');
     const hero = document.querySelector('.hero');
+    const borderRemove = document.querySelector('.link-mobo');
 
     openMenu.classList.add('show');
     closeMenu.classList.add('show');
@@ -43,8 +32,7 @@ function closeMenu(){
     cardContainer.classList.remove('show');
     masterLogo.classList.remove('show');
     paddingChanges.classList.remove('show');
-    hero.classList.remove('show');
-    
+    hero.classList.remove('show');   
 }
 
 
